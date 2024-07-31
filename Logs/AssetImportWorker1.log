@@ -188,3 +188,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 38174.759138 seconds.
+  path: Assets/Models/Ligth/Grey.mat
+  artifactKey: Guid(9baeea52f08bc47f291135e9bc081e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Grey.mat using Guid(9baeea52f08bc47f291135e9bc081e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c696b42e9cdfd8a83d1dce5608e07c') in 0.077277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Ligth/Light.mat
+  artifactKey: Guid(22e1e3a88de044188878d36f29a0d10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Light.mat using Guid(22e1e3a88de044188878d36f29a0d10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87170431340adb7975e763d838b67bfc') in 0.003164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1

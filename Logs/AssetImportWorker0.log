@@ -196,3 +196,115 @@ Received Import Request.
 Start importing Assets/Models/Wall/Wall.mat using Guid(c8be90a71056c47a0b2b4d4f67d37f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb6e92d6a261b7bea178da76031f106') in 0.073176 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 602.594752 seconds.
+  path: Assets/Models/Ligth
+  artifactKey: Guid(3ba10c0e97c894adeae2cd7ea1a3384c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth using Guid(3ba10c0e97c894adeae2cd7ea1a3384c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37526c5abc924607b668b5cbecfdcadf') in 0.000348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 33.723140 seconds.
+  path: Assets/Models/Ligth/Ceiling.fbx
+  artifactKey: Guid(f8ad2cef8cc554c9ca78066c55d7070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Ceiling.fbx using Guid(f8ad2cef8cc554c9ca78066c55d7070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaad7c28f66df1b68e1cc1539574a5c7') in 0.048989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 76.780622 seconds.
+  path: Assets/Models/Ligth/Glass.mat
+  artifactKey: Guid(a9995bf61a3064671b7951fd5b86dc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Glass.mat using Guid(a9995bf61a3064671b7951fd5b86dc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcc89c29851d21a6c03ad3ccb3b5602') in 0.010718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 270.932774 seconds.
+  path: Assets/Models/Ligth/Ceiling.fbx
+  artifactKey: Guid(f8ad2cef8cc554c9ca78066c55d7070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Ceiling.fbx using Guid(f8ad2cef8cc554c9ca78066c55d7070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bdf9fae9a2efcbef27fd67ef096f90b') in 0.040682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 213.671233 seconds.
+  path: Assets/Models/Ligth/light-brown-corridor-wall-has-600nw-2285349725.jpg
+  artifactKey: Guid(a986134ca7c5e418786a8149cd55d920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/light-brown-corridor-wall-has-600nw-2285349725.jpg using Guid(a986134ca7c5e418786a8149cd55d920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c9e7a967d6d55728831911d88f16e3') in 0.043839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 67.932162 seconds.
+  path: Assets/Models/Ligth/wall.mat
+  artifactKey: Guid(ec9d713d010c745d5bb8808d5e41966f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/wall.mat using Guid(ec9d713d010c745d5bb8808d5e41966f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753dbefddd1ee32d85ac94e14c7b41b1') in 0.011572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 111.592080 seconds.
+  path: Assets/Models/Ligth/Ceiling 1.fbx
+  artifactKey: Guid(14699fc8ebb8044b39596ba7070bf88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Ceiling 1.fbx using Guid(14699fc8ebb8044b39596ba7070bf88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91afc2cc72adb3acf00cf516400d6dc4') in 0.021630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 110.797826 seconds.
+  path: Assets/Models/Ligth/90bfcaf9cd3fbaa110a4f91c11d61318.jpg
+  artifactKey: Guid(7f4756563c81e44ad984c9d9f0fe7284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/90bfcaf9cd3fbaa110a4f91c11d61318.jpg using Guid(7f4756563c81e44ad984c9d9f0fe7284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782d87cfa93c0dfd9324a1b4b4b97865') in 0.013040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 112.343966 seconds.
+  path: Assets/Models/Ligth/Light.mat
+  artifactKey: Guid(22e1e3a88de044188878d36f29a0d10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Light.mat using Guid(22e1e3a88de044188878d36f29a0d10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865d95cf0e4188cc66797befc62f3b4f') in 0.006938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 31.417511 seconds.
+  path: Assets/Models/Ligth/Grey.mat
+  artifactKey: Guid(9baeea52f08bc47f291135e9bc081e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Grey.mat using Guid(9baeea52f08bc47f291135e9bc081e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1614103d4b66a4125f4f0cc6eef2b6') in 0.007068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 139.127694 seconds.
+  path: Assets/Models/Ligth/cute-anime-girl-portrait-black-white-colors-sketch-style_739548-6146.jpg.avif
+  artifactKey: Guid(567619a7d0fcc4a01977f199d5a1eb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/cute-anime-girl-portrait-black-white-colors-sketch-style_739548-6146.jpg.avif using Guid(567619a7d0fcc4a01977f199d5a1eb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7185918ce4a0ed54ff517c90f3c851') in 0.001358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 17.526668 seconds.
+  path: Assets/Models/Ligth/cute-anime-girl-portrait-black-white-colors-sketch-style_739548-6146.jpg
+  artifactKey: Guid(b122b27e47a6846c18c21e534808fd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/cute-anime-girl-portrait-black-white-colors-sketch-style_739548-6146.jpg using Guid(b122b27e47a6846c18c21e534808fd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556ae3275e98ff6add82ca4663b1b83a') in 0.001056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 58.820808 seconds.
+  path: Assets/Models/Ligth/cccc.png
+  artifactKey: Guid(9a0f55ef0a9954fd8ab46c79ab5ca7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/cccc.png using Guid(9a0f55ef0a9954fd8ab46c79ab5ca7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c996b85eb7245e6095ffde1ffaabd6') in 0.009281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 91.750293 seconds.
+  path: Assets/Models/Ligth/Glass.mat
+  artifactKey: Guid(a9995bf61a3064671b7951fd5b86dc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ligth/Glass.mat using Guid(a9995bf61a3064671b7951fd5b86dc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9240e978032cb1252a0d7c6a93541dc') in 0.149612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
