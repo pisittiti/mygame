@@ -11,8 +11,7 @@ Material:
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _NORMALMAP
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -42,11 +41,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 0.15, y: 0.3}
+        m_Scale: {x: 2.19, y: 0.3}
         m_Offset: {x: 1, y: 0.79}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6afba4e93eb8c4860a9369a7f68c16ab, type: 3}
-        m_Scale: {x: 0.15, y: 0.3}
+        m_Texture: {fileID: 2800000, guid: 0f30d9ba96fb9402685d071420d7bca8, type: 3}
+        m_Scale: {x: 2.19, y: 0.3}
         m_Offset: {x: 1, y: 0.79}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
