@@ -27,6 +27,7 @@ public class AutomaticCloseDoor : MonoBehaviour
             Debug.Log("DoorClosed");
             triggerCollider.enabled = false;
             Debug.Log("Trigger enable");
+            return;
         }
     }
     // Update is called once per frame
