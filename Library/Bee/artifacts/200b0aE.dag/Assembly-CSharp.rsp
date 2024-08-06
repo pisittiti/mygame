@@ -360,6 +360,8 @@
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.29f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Script/door/AutomaticCloseDoor.cs"
 "Assets/Script/door/interactable_door.cs"
+"Assets/Script/GameSystem/game_pause.cs"
+"Assets/Script/GameSystem/PauseMenu.cs"
 "Assets/Script/Moving wall/Moving_Door.cs"
 "Assets/Script/player/FPSController.cs"
 "Assets/Script/player/MouseLook.cs"
