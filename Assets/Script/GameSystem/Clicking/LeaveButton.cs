@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour
+public class LeaveButton : MonoBehaviour
 {
-    public void OnPlayButtonPressed()
+    public void OnLeaveButtonPressed()
     {
         // Load the next scene (replace "SceneName" with your scene's name)
-        SceneManager.LoadScene("Scene 1");
+        SceneManager.LoadScene("MainMenu");
     }
 }
-

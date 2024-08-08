@@ -1,44 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseManager : MonoBehaviour
+public class Game_pause : MonoBehaviour
 {
-    private bool isPaused = false;
-    private string currentGameScene;
-
-    void Start()
-    {
-        currentGameScene = SceneManager.GetActiveScene().name;
-    }
+    public GameObject player; // Assign your player GameObject in the Inspector
+    private Vector3 playerPosition;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P)) // Press 'P' to toggle pause
+        // Check for pause input (e.g., Escape key)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            PauseGame();
         }
     }
 
     public void PauseGame()
     {
-        isPaused = true;
-        Time.timeScale = 0f; // Freeze the game
-        SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive); // Load the pause menu scene additively
-        AudioListener.pause = true; // Pause audio
-    }
+        // Store the player's current position
+        playerPosition = player.transform.position;
 
-    public void ResumeGame()
+        // Save player's position in PlayerPrefs
+        PlayerPrefs.SetFloat("PlayerPosX", playerPosition.x);
+        PlayerPrefs.SetFloat("PlayerPosY", playerPosition.y);
+        PlayerPrefs.SetFloat("PlayerPosZ", playerPosition.z);
+        PlayerPrefs.Save();
+
+        // Disable player movement (you may need to reference your movement script)
+        player.GetComponent<FPSController>().enabled = false; // Disable the player movement script
+
+        // Load the PauseGame scene
+        SceneManager.LoadScene("PauseMenu");
+        UnlockCursor();
+    }
+    void UnlockCursor()
     {
-        isPaused = false;
-        Time.timeScale = 1f; // Resume the game
-        SceneManager.UnloadSceneAsync("PauseMenu"); // Unload the pause menu scene
-        AudioListener.pause = false; // Resume audio
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
+        Cursor.visible = true; // Make the cursor visible
     }
 }
+

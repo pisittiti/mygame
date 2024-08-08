@@ -23,7 +23,7 @@ public class MoveOnTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Check if the colliding object is the player (you can use tags or other identifiers)
-        if (other.CompareTag("Player") && !isMoving)
+        if ((other.gameObject.tag == "Reach") && !isMoving)
         {
             // Start the coroutine to delay the movement
             StartCoroutine(MoveObjectWithDelay());
