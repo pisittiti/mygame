@@ -361,6 +361,8 @@
 "Assets/Script/DataPersistance/Data/GameData.cs"
 "Assets/Script/door/AutomaticCloseDoor.cs"
 "Assets/Script/door/interactable_door.cs"
+"Assets/Script/GameSystem/Clicking/BackButton.cs"
+"Assets/Script/GameSystem/Clicking/CreditMenu.cs"
 "Assets/Script/GameSystem/Clicking/LeaveButton.cs"
 "Assets/Script/GameSystem/Clicking/PauseGame.cs"
 "Assets/Script/GameSystem/Clicking/PlayButton.cs"

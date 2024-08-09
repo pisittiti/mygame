@@ -2,12 +2,12 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AutomaticCloseDoor
+    - BackButton
+    - CreditMenu
     - FPSController
-    - Game_pause
-    - LeaveButton
     - MouseLook
     - MoveOnTrigger
-    - PauseMenu
+    - PauseGame
     - QuitButton
     - YourScript
     - interactable_door
@@ -93,15 +93,72 @@ ScriptsOnlyBuild:
     fullTypeName: QuitButton
     methodName: QuitGame
   - assembly: Assembly-CSharp
-    fullTypeName: YourScript
-    methodName: OnPlayButtonPressed
+    fullTypeName: CreditMenu
+    methodName: OnGoButtonPressed
   - assembly: Assembly-CSharp
-    fullTypeName: LeaveButton
+    fullTypeName: BackButton
+    methodName: OnBackButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseGame
+    methodName: ResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseGame
     methodName: OnLeaveButtonPressed
   - assembly: Assembly-CSharp
-    fullTypeName: YourScript
-    methodName: OnPlayButtonPressed
+    fullTypeName: PauseGame
+    methodName: ResumeGame
   sceneClasses:
+    Assets/Scenes/CreditsMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1674}
+    - Class: 114
+      Script: {instanceID: 2796}
+    - Class: 114
+      Script: {instanceID: 3022}
+    - Class: 114
+      Script: {instanceID: 3358}
+    - Class: 114
+      Script: {instanceID: 5822}
+    - Class: 114
+      Script: {instanceID: 6166}
+    - Class: 114
+      Script: {instanceID: 6694}
+    - Class: 114
+      Script: {instanceID: 62348}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -143,6 +200,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7220}
     - Class: 114
       Script: {instanceID: 7766}
+    - Class: 114
+      Script: {instanceID: 58660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,67 +209,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/PauseMenu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1674}
-    - Class: 114
-      Script: {instanceID: 1862}
-    - Class: 114
-      Script: {instanceID: 1886}
-    - Class: 114
-      Script: {instanceID: 2796}
-    - Class: 114
-      Script: {instanceID: 3022}
-    - Class: 114
-      Script: {instanceID: 3358}
-    - Class: 114
-      Script: {instanceID: 5822}
-    - Class: 114
-      Script: {instanceID: 6166}
-    - Class: 114
-      Script: {instanceID: 6694}
-    - Class: 114
-      Script: {instanceID: 7220}
-    - Class: 114
-      Script: {instanceID: 7766}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -260,17 +258,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1674}
+    - Class: 114
+      Script: {instanceID: 1886}
+    - Class: 114
       Script: {instanceID: 2552}
     - Class: 114
       Script: {instanceID: 2778}
     - Class: 114
+      Script: {instanceID: 2796}
+    - Class: 114
+      Script: {instanceID: 3022}
+    - Class: 114
       Script: {instanceID: 3152}
+    - Class: 114
+      Script: {instanceID: 3358}
     - Class: 114
       Script: {instanceID: 3658}
     - Class: 114
       Script: {instanceID: 3844}
-    - Class: 114
-      Script: {instanceID: 4164}
     - Class: 114
       Script: {instanceID: 4682}
     - Class: 114
@@ -282,12 +288,20 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5592}
     - Class: 114
-      Script: {instanceID: 7776}
+      Script: {instanceID: 5822}
+    - Class: 114
+      Script: {instanceID: 6166}
+    - Class: 114
+      Script: {instanceID: 6694}
     - Class: 114
       Script: {instanceID: 7916}
     - Class: 114
       Script: {instanceID: 8350}
+    - Class: 114
+      Script: {instanceID: 32328}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -300,6 +314,12 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -702,12 +722,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerExitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 636d2b6014c7e195c81f015d54e18576
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Game_pause
   - hash:
       serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
@@ -1226,12 +1240,6 @@ ScriptsOnlyBuild:
     className: YourScript
   - hash:
       serializedVersion: 2
-      Hash: ee7dcb171fa35d8e4c39bdc4d03d9518
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PauseMenu
-  - hash:
-      serializedVersion: 2
       Hash: 67272c9c30c50b68ef1ce72ac0191c57
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1350,9 +1358,27 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 14846cac2c1fe72eaed4c4709233a399
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PauseGame
+  - hash:
+      serializedVersion: 2
+      Hash: b0ce3883ad229618424855a44eab4c51
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CreditMenu
+  - hash:
+      serializedVersion: 2
+      Hash: f3bfd6fe15d116259a2601cab48a1cec
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BackButton
   platform: 2
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
-  - Assets/Scenes/PauseMenu.unity
+  - Assets/Scenes/CreditsMenu.unity
   - Assets/Scenes/Scene 1.unity
-  playerPath: /Users/me/Desktop/test 2.app
+  playerPath: /Users/me/Desktop/test 3.app
