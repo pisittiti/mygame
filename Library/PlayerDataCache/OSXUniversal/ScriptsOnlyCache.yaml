@@ -3,11 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AutomaticCloseDoor
     - FPSController
+    - Game_pause
+    - LeaveButton
     - MouseLook
     - MoveOnTrigger
-    - PauseManager
-    - PlayButton
+    - PauseMenu
     - QuitButton
+    - YourScript
     - interactable_door
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
@@ -85,11 +87,20 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: PlayButton
+    fullTypeName: YourScript
     methodName: OnPlayButtonPressed
   - assembly: Assembly-CSharp
     fullTypeName: QuitButton
     methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: YourScript
+    methodName: OnPlayButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: LeaveButton
+    methodName: OnLeaveButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: YourScript
+    methodName: OnPlayButtonPressed
   sceneClasses:
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -115,7 +126,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1674}
     - Class: 114
-      Script: {instanceID: 1884}
+      Script: {instanceID: 1886}
     - Class: 114
       Script: {instanceID: 2796}
     - Class: 114
@@ -123,15 +134,74 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 5818}
+      Script: {instanceID: 5822}
     - Class: 114
-      Script: {instanceID: 6162}
+      Script: {instanceID: 6166}
     - Class: 114
-      Script: {instanceID: 6690}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 31192}
+      Script: {instanceID: 7220}
     - Class: 114
-      Script: {instanceID: 33532}
+      Script: {instanceID: 7766}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/PauseMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1674}
+    - Class: 114
+      Script: {instanceID: 1862}
+    - Class: 114
+      Script: {instanceID: 1886}
+    - Class: 114
+      Script: {instanceID: 2796}
+    - Class: 114
+      Script: {instanceID: 3022}
+    - Class: 114
+      Script: {instanceID: 3358}
+    - Class: 114
+      Script: {instanceID: 5822}
+    - Class: 114
+      Script: {instanceID: 6166}
+    - Class: 114
+      Script: {instanceID: 6694}
+    - Class: 114
+      Script: {instanceID: 7220}
+    - Class: 114
+      Script: {instanceID: 7766}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -200,21 +270,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3844}
     - Class: 114
-      Script: {instanceID: 4680}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 5048}
+      Script: {instanceID: 4682}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 5050}
     - Class: 114
-      Script: {instanceID: 5534}
+      Script: {instanceID: 5214}
     - Class: 114
-      Script: {instanceID: 5590}
+      Script: {instanceID: 5536}
     - Class: 114
-      Script: {instanceID: 7768}
+      Script: {instanceID: 5592}
     - Class: 114
-      Script: {instanceID: 7908}
+      Script: {instanceID: 7776}
     - Class: 114
-      Script: {instanceID: 8342}
+      Script: {instanceID: 7916}
+    - Class: 114
+      Script: {instanceID: 8350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 143
@@ -278,6 +350,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 8a80f25391e27c73987a653e7c2355c1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LeaveButton
+  - hash:
+      serializedVersion: 2
       Hash: 8703b6ae2b0eefd9dafbc44d8d333fb1
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -294,12 +372,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: ee87ea8981221b91c4908f0760c13703
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PauseMenuUI
   - hash:
       serializedVersion: 2
       Hash: b12640dfdb5966813e9dd838893e6c4a
@@ -632,6 +704,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 636d2b6014c7e195c81f015d54e18576
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Game_pause
+  - hash:
+      serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -896,6 +974,12 @@ ScriptsOnlyBuild:
     className: DepthOfField
   - hash:
       serializedVersion: 2
+      Hash: 78bc10df7fe0f82d47bd34885fa1005c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameData
+  - hash:
+      serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1046,6 +1130,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 0a88bbc2d41b8509aa137098f254d4a1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: QuitButton
+  - hash:
+      serializedVersion: 2
       Hash: c4b85a67513b4f0cf7b5fb2d5ded04b0
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1130,10 +1220,16 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 1f3974fa4c26edef75ed5ca40e2a8241
+      Hash: c5108c9aa6af4474080af8c045c82bc1
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: PauseManager
+    className: YourScript
+  - hash:
+      serializedVersion: 2
+      Hash: ee7dcb171fa35d8e4c39bdc4d03d9518
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: 67272c9c30c50b68ef1ce72ac0191c57
@@ -1254,26 +1350,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 78bc10df7fe0f82d47bd34885fa1005c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameData
-  - hash:
-      serializedVersion: 2
-      Hash: 89813b3ad5859268c49a4fc18d4b3885
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayButton
-  - hash:
-      serializedVersion: 2
-      Hash: 0a88bbc2d41b8509aa137098f254d4a1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: QuitButton
   platform: 2
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/PauseMenu.unity
   - Assets/Scenes/Scene 1.unity
-  playerPath: /Users/me/Desktop/test 1.app
+  playerPath: /Users/me/Desktop/test 2.app

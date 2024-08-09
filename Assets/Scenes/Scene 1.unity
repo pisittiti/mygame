@@ -10950,6 +10950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1677780575}
+  mainCamera: {fileID: 963194227}
 --- !u!1 &669108295
 GameObject:
   m_ObjectHideFlags: 0
@@ -14882,6 +14883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1677780575}
+  mainCamera: {fileID: 963194227}
 --- !u!4 &728104809
 Transform:
   m_ObjectHideFlags: 0

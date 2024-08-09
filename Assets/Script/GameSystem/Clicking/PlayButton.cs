@@ -13,7 +13,7 @@ public class YourScript : MonoBehaviour
     private IEnumerator DelayedAction()
     {
         // Wait for 8 seconds
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         
         // Perform the action after the delay
         Debug.Log("Action executed after delay!");
