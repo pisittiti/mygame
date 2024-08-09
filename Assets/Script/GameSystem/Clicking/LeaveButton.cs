@@ -7,7 +7,8 @@ public class LeaveButton : MonoBehaviour
 {
     public void OnLeaveButtonPressed()
     {
+        Time.timeScale = 1f; // Ensure the game is running at normal speed
         // Load the next scene (replace "SceneName" with your scene's name)
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(1);
     }
 }
